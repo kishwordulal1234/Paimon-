@@ -1,0 +1,12 @@
+# Crocell Requirements
+# Install with: pip install -r requirements.txt
+
+# Core dependencies (all platforms)
+requests>=2.31.0
+pycryptodome>=3.19.0
+
+# Cross-platform system info
+psutil>=5.9.0
+
+# Windows-specific
+pywin32>=306; sys_platform == 'win32'
