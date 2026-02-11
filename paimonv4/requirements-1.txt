@@ -1,0 +1,15 @@
+# Crocell Requirements - Cross-Platform Support
+
+# Core dependencies (all platforms)
+requests>=2.31.0
+psutil>=5.9.0
+pycryptodome>=3.19.0
+
+# Windows-specific (auto-installed on Windows)
+pywin32>=306; sys_platform == 'win32'
+
+# Optional: Better keyring support for macOS/Linux
+keyring>=24.0.0; sys_platform != 'win32'
+
+# Note: These are the minimal requirements
+# For PyInstaller builds, you may need additional packages
